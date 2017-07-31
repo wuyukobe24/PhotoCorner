@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		F1EFCC2D1F2F342B001D3AAB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EFCC2C1F2F342B001D3AAB /* main.m */; };
 		F1EFCC301F2F342B001D3AAB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EFCC2F1F2F342B001D3AAB /* AppDelegate.m */; };
-		F1EFCC331F2F342B001D3AAB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EFCC321F2F342B001D3AAB /* ViewController.m */; };
 		F1EFCC361F2F342B001D3AAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1EFCC341F2F342B001D3AAB /* Main.storyboard */; };
 		F1EFCC381F2F342B001D3AAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1EFCC371F2F342B001D3AAB /* Assets.xcassets */; };
 		F1EFCC3B1F2F342B001D3AAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1EFCC391F2F342B001D3AAB /* LaunchScreen.storyboard */; };
 		F1EFCC461F2F342B001D3AAB /* CircleRadiusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EFCC451F2F342B001D3AAB /* CircleRadiusTests.m */; };
 		F1EFCC511F2F342B001D3AAB /* CircleRadiusUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EFCC501F2F342B001D3AAB /* CircleRadiusUITests.m */; };
+		F1EFCC601F2F3461001D3AAB /* CircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EFCC5E1F2F3461001D3AAB /* CircleViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +39,6 @@
 		F1EFCC2C1F2F342B001D3AAB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F1EFCC2E1F2F342B001D3AAB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F1EFCC2F1F2F342B001D3AAB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F1EFCC311F2F342B001D3AAB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F1EFCC321F2F342B001D3AAB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F1EFCC351F2F342B001D3AAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F1EFCC371F2F342B001D3AAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1EFCC3A1F2F342B001D3AAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +49,8 @@
 		F1EFCC4C1F2F342B001D3AAB /* CircleRadiusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CircleRadiusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1EFCC501F2F342B001D3AAB /* CircleRadiusUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleRadiusUITests.m; sourceTree = "<group>"; };
 		F1EFCC521F2F342B001D3AAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1EFCC5E1F2F3461001D3AAB /* CircleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleViewController.m; sourceTree = "<group>"; };
+		F1EFCC5F1F2F3461001D3AAB /* CircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +103,8 @@
 			children = (
 				F1EFCC2E1F2F342B001D3AAB /* AppDelegate.h */,
 				F1EFCC2F1F2F342B001D3AAB /* AppDelegate.m */,
-				F1EFCC311F2F342B001D3AAB /* ViewController.h */,
-				F1EFCC321F2F342B001D3AAB /* ViewController.m */,
+				F1EFCC5F1F2F3461001D3AAB /* CircleViewController.h */,
+				F1EFCC5E1F2F3461001D3AAB /* CircleViewController.m */,
 				F1EFCC341F2F342B001D3AAB /* Main.storyboard */,
 				F1EFCC371F2F342B001D3AAB /* Assets.xcassets */,
 				F1EFCC391F2F342B001D3AAB /* LaunchScreen.storyboard */,
@@ -276,8 +276,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1EFCC331F2F342B001D3AAB /* ViewController.m in Sources */,
 				F1EFCC301F2F342B001D3AAB /* AppDelegate.m in Sources */,
+				F1EFCC601F2F3461001D3AAB /* CircleViewController.m in Sources */,
 				F1EFCC2D1F2F342B001D3AAB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

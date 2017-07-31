@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "CircleViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    CircleViewController * view = [[CircleViewController alloc]init];
+    UINavigationController * nav = [[UINavigationController alloc]initWithRootViewController:view];
+    nav.navigationBar.barTintColor = [UIColor orangeColor];
+    [nav.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],NSForegroundColorAttributeName,nil]];
+    self.window.rootViewController = nav;
     return YES;
 }
 
